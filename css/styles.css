@@ -121,7 +121,7 @@ h3 {
 
 /* BUTTON */
 
-.sitenav-btn {
+.site-header-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -171,28 +171,28 @@ h3 {
 .hero-header-wrapper {
   background-color: #e5e5e5;
   padding-top: 46px;
-  background-image: url(../img/hero-bg-mobile.svg), linear-gradient(212.6deg, #FFFFFF 3.87%, rgba(255, 255, 255, 0) 45.48%);
+  background-image: url(../img/hero-bg.svg), linear-gradient(212.6deg, #FFFFFF 3.87%, rgba(255, 255, 255, 0) 45.48%);
   background-position: calc(50% + 400px) -140px;
-  padding-bottom: 190px;
+  padding-bottom: 95px;
   background-repeat: no-repeat;
 }
 
-.sitenav {
+.site-header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.sitenav-logo {
+.site-header-logo {
   display: block;
   
 }
 
-.sitenav-logo-img {
+.site-header-logo-img {
   display: block;
 }
 
-.sitenav-link-img {
+.site-header-link-img {
   display: block;
   width: 47px;
   height: 47px;
@@ -208,7 +208,6 @@ h3 {
 .site-hero-content {
   display: flex;
   flex-direction: column;
-  margin-bottom: 118px;
 }
 
 .site-hero-title {
@@ -230,6 +229,7 @@ h3 {
   height: auto;
   font-weight: 500;
   font-size: 18px;
+  margin-bottom: 118px;
 }
 
 .site-hero-btn-wrapper {
