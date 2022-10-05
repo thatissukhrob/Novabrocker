@@ -1,3 +1,85 @@
+/* CUSTOM PROPS */
+
+:root {
+  /* COLORS  */
+  --accent-color: #eb242a;
+  --white: #fff;
+  --blue: #272d4e;
+  --gray: #57606a;
+  --light-gray: #fdf4f4;
+  --dark-blue: #001a49;
+  
+  /* FONTS  */
+  --mulish: "Mulish", "Arial", sans-serif;
+  --roboto: "Roboto", "Arial", sans-serif;
+}
+
+/* FONT-FACE */
+
+/* FONT-FACE  */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
+  url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
+  url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+  url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Light.woff2") format("woff2"),
+  url("../fonts/Roboto-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Bold.woff2") format("woff2"),
+  url("../fonts/Mulish-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Medium.woff2") format("woff2"),
+  url("../fonts/Mulish-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Regular.woff2") format("woff2"),
+  url("../fonts/Mulish-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* GLOBAL */
 
 html {
@@ -18,11 +100,11 @@ body  {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: var(--mulish);
   font-size: 16px;
   line-height: 1.5;
   background-color: #fff;
-  color: #000;
+  color: #4f596a;
 }
 
 img {
@@ -30,13 +112,50 @@ img {
   height: auto;
 }
 
+h1,
+h2,
+h3 {
+  font-family: var(--roboto);
+  color: var(--dark-blue);
+}
+
+/* BUTTON */
+
+.sitenav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--accent-color);
+  width: 193px;
+  height: auto;
+  border-radius: 50px;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-family: var(--mulish);
+  font-weight: bold;
+}
+
+.site-hero-btn {
+  padding: 20px 68px;
+  background-color: var(--accent-color);
+  border-radius: 60px;
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--roboto);
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+  margin-right: 30px;
+}
+
+
 /* CONTAINER */
 
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1528px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -46,3 +165,89 @@ img {
 .main-content {
   flex-grow: 1;
 }
+
+/* HEADER */
+
+.hero-header-wrapper {
+  background-color: #e5e5e5;
+  padding-top: 46px;
+  background-image: url(../img/hero-bg-mobile.svg), linear-gradient(212.6deg, #FFFFFF 3.87%, rgba(255, 255, 255, 0) 45.48%);
+  background-position: calc(50% + 400px) -140px;
+  padding-bottom: 190px;
+  background-repeat: no-repeat;
+}
+
+.sitenav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sitenav-logo {
+  display: block;
+  
+}
+
+.sitenav-logo-img {
+  display: block;
+}
+
+.sitenav-link-img {
+  display: block;
+  width: 47px;
+  height: 47px;
+  margin-left: -50px;
+}
+
+/* SITE-HERO */
+
+.site-hero {
+  margin-top: 150px;
+}
+
+.site-hero-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 118px;
+}
+
+.site-hero-title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 36px;
+  max-width: 567px;
+  width: 100%;
+  height: auto;
+  font-weight: bold;
+  font-size: 90px;
+}
+
+.site-hero-text {
+  padding: 0;
+  margin: 0;
+  max-width: 551px;
+  width: 100%;
+  height: auto;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.site-hero-btn-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+
+.site-hero-call {
+  color: #299EF3;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.site-hero-call::before {
+  display: inline-block;
+  content: 'sau';
+  color: var(--gray);
+  margin-right: 25px;
+}
+
