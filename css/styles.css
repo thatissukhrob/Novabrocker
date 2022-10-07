@@ -175,6 +175,7 @@ h3 {
   background-position: calc(50% + 400px) -140px;
   padding-bottom: 95px;
   background-repeat: no-repeat;
+  margin-bottom: 59px;
 }
 
 .site-header-container {
@@ -251,3 +252,105 @@ h3 {
   margin-right: 25px;
 }
 
+/* CASHBACK */
+
+.cashback-container {
+  margin-top: 59px;
+  display: flex;
+  background-color: #fdf4f4;
+  border-radius: 21px;
+  height: 244px;
+  margin-bottom: 60px;
+}
+
+.cashback-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 51px;
+  padding-left: 125px;
+  padding-bottom: 45px;
+  margin-right: 90px;
+}
+
+.cashback-title {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.4;
+  margin-bottom: 34px;
+}
+
+.cashback-text {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+  width: 670px;
+}
+
+.cashback-img {
+  width: 473px;
+  height: auto;
+  padding-top: 51px;
+  object-fit: contain;
+  padding-bottom: 31px;
+}
+
+/* STEPS */
+
+.steps {
+}
+
+.steps-container {
+  padding-top: 60px;
+}
+
+.steps-title {
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 978px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 35px;
+}
+
+.step-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 35px;
+  counter-reset: step;
+}
+
+.step-item {
+  counter-increment: step;
+}
+
+.step-item-title {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+.step-item-text {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: var(--roboto);
+}
