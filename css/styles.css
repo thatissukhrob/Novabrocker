@@ -301,6 +301,8 @@ h3 {
 /* STEPS */
 
 .steps {
+  margin-top: 60px;
+  margin-bottom: 75px;
 }
 
 .steps-container {
@@ -325,6 +327,7 @@ h3 {
 .step-list {
   padding: 0;
   margin: 0;
+  padding-left: 100px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -333,21 +336,53 @@ h3 {
 }
 
 .step-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   counter-increment: step;
+  max-width: 358px;
+  width: 100%;
+  height: auto;
+}
+
+.step-item:not(:last-child) {
+  margin-right: 140px;
+}
+
+.step-item::before {
+  display: inline-block;
+  padding-top: 15px;
+  margin-bottom: 30px;
+  font-family: var(--roboto);
+  width: 99px;
+  height: 99px;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--accent-color);
+  content: counter(step);
+  background-color: var(--white);
+  border-radius: 50%;
+  box-shadow: 0px 12.375px 24.75px 0px rgb(0 0 0 / 11%);
 }
 
 .step-item-title {
   padding: 0;
   margin: 0;
+  margin-top: 30px;
   text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.5;
+  margin-bottom: 10px;
 }
 
 .step-item-text {
   padding: 0;
   margin: 0;
+  margin-top: 10px;
   text-align: center;
   font-weight: 500;
   font-size: 20px;
