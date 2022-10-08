@@ -5,18 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Novabrocker</title>
-
+  
   <!-- STYLES -->
-
+  
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
-
-
+  
+  
 </head>
 <body>
-
+  
   <!-- SITE-HEADER -->
-
+  
   <div class="hero-header-wrapper">
     <header class="header">
       <div class="container site-header-container">
@@ -43,86 +43,134 @@
       </div>
     </section>
   </div>
-
+  
   <!-- MAIN-CONTETN -->
-
+  
   <main class="main-content">
-
+    
     <!-- SITE-CASHBACK -->
-
+    
     <section class="cashback">
       <div class="container cashback-container">
         <div class="cashback-content">
           <h3 class="cashback-title">10% CASHBACK</h3>
           <p class="cashback-text">Cu Asigurarea electronică RCA de la NOVABROKER beneficiezi
             de 10% cashback anual și multe alte oferte!</p>
+          </div>
+          <img class="cashback-img" src="img/cashback.svg" alt="Cashback">
         </div>
-        <img class="cashback-img" src="img/cashback.svg" alt="Cashback">
-      </div>
-    </section>
-
-    <!-- SITE-STEPS -->
-
-    <section class="steps">
-      <div class="container steps-container">
-        <h2 class="steps-title">Urmează 3 pași simpli și primește asigurarea în doar 10 minute</h2>
-        <ol class="step-list">
-          <li class="step-item">
-            <h3 class="step-item-title">Calculează asigurarea</h3>
-            <p class="step-item-text">Completează formularul de mai jos.</p>
-          </li>
-          <li class="step-item">
-            <h3 class="step-item-title">Achită online </h3>
-            <p class="step-item-text">Achită cu Visa sau MasterCard.</p>
-          </li>
-          <li class="step-item">
-            <h3 class="step-item-title">Primește asigurarea</h3>
-            <p class="step-item-text">Asigurarea va fi expediată pe e-mail în scurt timp.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- SITE-DOCUMENT -->
-
-    <section class="document">
-      <div class="container document-container">
-        <div class="document-title-wrapper">
-          <h2 class="document-title">Calculează asigurarea</h2>
-          <p class="document-text">Completează formularul de mai jos.</p>
+      </section>
+      
+      <!-- SITE-STEPS -->
+      
+      <section class="steps">
+        <div class="container steps-container">
+          <h2 class="steps-title">Urmează 3 pași simpli și primește asigurarea în doar 10 minute</h2>
+          <ol class="step-list">
+            <li class="step-item">
+              <h3 class="step-item-title">Calculează asigurarea</h3>
+              <p class="step-item-text">Completează formularul de mai jos.</p>
+            </li>
+            <li class="step-item">
+              <h3 class="step-item-title">Achită online </h3>
+              <p class="step-item-text">Achită cu Visa sau MasterCard.</p>
+            </li>
+            <li class="step-item">
+              <h3 class="step-item-title">Primește asigurarea</h3>
+              <p class="step-item-text">Asigurarea va fi expediată pe e-mail în scurt timp.</p>
+            </li>
+          </ol>
         </div>
-        <ul class="document-card-list">
-          <li class="document-card-item document-card-item-red">
-            <img class="document-card-item-img" src="img/img-icon.svg" alt="Image icon">
-            <div class="document-card-item-content">
-              <h3 class="document-content-title">ÎNCARCĂ POZE CU <br> PAȘAPORTUL TEHNIC</h3>
-              <p class="document-content-text">Încarcă poze cu pașaportul tehnic față și verso al autovehiculului, lasă-ne datele de contact și vei primi oferta de preț exact în doar câteva minute.</p> 
-            </div>
+      </section>
+      
+      <!-- SITE-DOCUMENT -->
+      
+      <section class="document">
+        <div class="container document-container">
+          <div class="document-title-wrapper">
+            <h2 class="document-title">Calculează asigurarea</h2>
+            <p class="document-text">Completează formularul de mai jos.</p>
+          </div>
+          <ul class="document-card-list">
+            <li class="document-card-item document-card-item-red">
+              <img class="document-card-item-img" src="img/img-icon.svg" alt="Image icon">
+              <div class="document-card-item-content">
+                <h3 class="document-content-title">ÎNCARCĂ POZE CU <br> PAȘAPORTUL TEHNIC</h3>
+                <p class="document-content-text">Încarcă poze cu pașaportul tehnic față și verso al autovehiculului, lasă-ne datele de contact și vei primi oferta de preț exact în doar câteva minute.</p> 
+              </div>
+              
+              <label class="card-label" for="passport" aria-label="Upload pictures with your technical passport">
+                <img class="card-label-img" src="img/white-plus.svg" alt="Plus">
+                <input class="card-input visually-hidden" type="file" id="passport" required>
+              </label>
+            </li>
+            
+            <li class="document-card-item document-card-item-white">
+              <img class="document-card-item-img" src="img/write-icon.svg" alt="Image icon">
+              <div class="document-card-item-content">
+                <h3 class="document-content-title">COMPLETEAZĂ <br> MANUAL</h3>
+                <p class="document-content-text">Lasă-ne detaliile mai jos și vei primi oferta de preț exact în doar câteva minute.</p>
+              </div>
+              
+              <label class="card-label" for="passport" aria-label="Upload pictures with your technical passport">
+                <img class="card-label-img" src="img/dark-blue-plus.svg" alt="Plus">
+                <input class="card-input visually-hidden" type="file" id="passport" required>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+      <section class="cta">
+        <div class="container cta-container">
+          <p class="cta-title">Lasă-ne un <strong>număr de telefon</strong> sau click aici ca să iei legătura cu un specialist în <strong>live chat</strong>.</p>
+          <div class="cta-call-wrapper">
+            <input class="cta-input" type="tel" name="Your telephone number" placeholder="+373 69 22 22 22" required>
+            <a href="tel:37369222222">
+              <img src="img/phone-red.svg" alt="phone">
+            </a>
+          </div>
+        </div>
+      </section>
 
-            <label class="card-label" for="passport" aria-label="Upload pictures with your technical passport">
-              <img class="card-label-img" src="img/white-plus.svg" alt="Plus">
-              <input class="card-input visually-hidden" type="file" id="passport" required>
-            </label>
-          </li>
+      <section class="offers">
+        <div class="container offers-container">
+          <h2 class="offers-title">NOVABROKER ÎȚI OFERĂ</h2>
+          <ul class="offers-list">
+            <li class="offers-list-item">
+              <img class="offers-list-item-img" src="img/dollar-icon.svg" alt="Dollar">
+              <div class="offers-content">
+                <h3 class="offers-content-title">Prețuiește-ți <br> timpul</h3>
+                <p class="offers-text">Procesul de solicitare și primire a asigurării îți economisește timpul, fiind ușor, rapid și 100% online.</p>
+              </div>
+            </li>
+            <li class="offers-list-item">
+              <img class="offers-list-item-img" src="img/time-icon.svg" alt="Time">
+              <div class="offers-content">
+                <h3 class="offers-content-title">Economisește până la 50% prin <br> sistemul Bonus-Malus</h3>
+                <p class="offers-text">Sistemul Bonus-Malus îți asigură economisiri de până la 50% în cazul în care nu ai avut accidente rutiere în ultimii cinci ani.</p>
+              </div>
+            </li>
+            <li class="offers-list-item">
+              <img class="offers-list-item-img" src="img/privacy-icon.svg" alt="Privacy">
+              <div class="offers-content">
+                <h3 class="offers-content-title">Consultare <br> accesibilă 24/7</h3>
+                <p class="offers-text">Echipa NOVABROKER este mereu alături, gata să te ajute și să răspundă la orice întrebare la orice oră.</p>
+              </div>
+            </li>
+            <li class="offers-list-item">
+              <img class="offers-list-item-img" src="img/percent-icon.svg" alt="Percent">
+              <div class="offers-content">
+                <h3 class="offers-content-title">10% cashback și oferte <br> personalizate individual</h3>
+                <p class="offers-text">Comandă Asigurarea acum și primești 10% cashback anual.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-          <li class="document-card-item document-card-item-white">
-            <img class="document-card-item-img" src="img/write-icon.svg" alt="Image icon">
-            <div class="document-card-item-content">
-              <h3 class="document-content-title">COMPLETEAZĂ <br> MANUAL</h3>
-              <p class="document-content-text">Lasă-ne detaliile mai jos și vei primi oferta de preț exact în doar câteva minute.</p>
-            </div>
-
-            <label class="card-label" for="passport" aria-label="Upload pictures with your technical passport">
-              <img class="card-label-img" src="img/dark-blue-plus.svg" alt="Plus">
-              <input class="card-input visually-hidden" type="file" id="passport" required>
-            </label>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-  </main>
-
-  <script src="js/main.js"></script>
-</body>
-</html>
+    </main>
+    
+    <script src="js/main.js"></script>
+  </body>
+  </html>
