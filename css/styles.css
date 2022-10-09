@@ -141,7 +141,7 @@ h3 {
   font-weight: bold;
 }
 
-.site-hero-btn {
+.primary-button {
   padding: 20px 68px;
   background-color: var(--accent-color);
   border-radius: 60px;
@@ -152,6 +152,10 @@ h3 {
   font-size: 26px;
   text-align: center;
   margin-right: 30px;
+}
+
+.info-button {
+  width: 256px;
 }
 
 
@@ -562,7 +566,7 @@ h3 {
   margin: 0;
   margin-right: auto;
   margin-left: auto;
-
+  
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -614,4 +618,74 @@ h3 {
   margin: 0;
   padding: 0;
   font-weight: 400;
+}
+
+/* SITE-INFO */
+
+.info {
+  padding-top: 75px;
+  margin-bottom: 86px;
+}
+
+.info-container {
+  max-width: 1810px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 55px;
+  padding-left: 55px;
+  display: flex;
+  align-items: center;
+}
+
+.info-content {
+  max-width: 1370px;
+  width: 100%;
+  height: 880px;
+  background-color: #fcf3f4;
+  border-radius: 25px;
+  padding-left: 161px;
+  padding-top: 142px;
+  padding-bottom: 220px;
+}
+
+.info-content-title {
+  width: 750px;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+
+.info-content-text {
+  margin: 0;
+  padding: 0;
+  width: 703px;
+  height: 75px;
+  font-weight: 400;
+  font-family: var(--mulish);
+  font-size: 25px;
+  line-height: 1.3;
+  margin-bottom: 73px;
+}
+
+.info-video-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 872px;
+  width: 100%;
+  height: 532px;
+  background-color: var(--dark-blue);
+  border-radius: 29px;
+  box-shadow: 0px 47.3173px 65.0612px #818A8C;
+  margin-left: -400px;
+}
+
+.info-video-box-img {
+  width: 103px;
+  height: 103px;
+  object-fit: contain;
 }
