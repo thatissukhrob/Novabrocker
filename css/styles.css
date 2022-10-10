@@ -112,6 +112,11 @@ img {
   height: auto;
 }
 
+*:focus{
+  outline: 2px dashed var(--accent-color);
+  outline-offset: 2px;
+}
+
 h1,
 h2,
 h3 {
@@ -139,6 +144,15 @@ h3 {
   text-decoration: none;
   font-family: var(--mulish);
   font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+.site-header-btn:hover {
+  opacity: 0.8;
+}
+
+.site-header-btn:active {
+  opacity: 0.6;
 }
 
 .primary-button {
@@ -152,6 +166,15 @@ h3 {
   font-size: 26px;
   text-align: center;
   margin-right: 30px;
+  transition: opacity 0.3s ease;
+}
+
+.primary-button:hover {
+  opacity: 0.8;
+}
+
+.primary-button:active {
+  opacity: 0.6;
 }
 
 .info-button {
