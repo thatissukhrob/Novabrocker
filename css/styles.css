@@ -577,6 +577,7 @@ h3 {
 }
 
 .cta-call-wrapper {
+  position: relative;
 }
 
 .cta-input {
